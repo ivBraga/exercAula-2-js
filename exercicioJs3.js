@@ -13,12 +13,17 @@ let products = [
 
     // 1. Adicione um novo produto ao array com as mesmas propriedades dos produtos existentes.
     products.push({ name:'Notebook', price:600, quantity:10, colors:['red', 'silver', 'black'] })
+
     // 2. Remova os produtos fora de estoque da matriz.
     productsToRemove = products.filter((product) => product.quantity > 0)
     products.pop(productsToRemove)
+
     // 3. Imprima no console a soma do estoque de todos os produtos.
     console.log(products.reduce((acc, product) => acc + product.quantity, 0))
+
     // 4. Imprima produtos com preço superior a um determinado valor.
     console.log(products.filter((product) => product.price > 100))
+
     // 5. Imprima o nome de todos os produtos que tenham a letra ‘o’ em seu nome.
     console.log(products.filter((product) => product.name.includes('o')))
+    

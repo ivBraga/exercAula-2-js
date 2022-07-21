@@ -16,15 +16,20 @@ let products = [
         product['id'] = id;
     })
     console.log(products)
+    console.log('-----------------------------------------------------');
     
     // 2. Imprima o nome de cada um dos produtos no console.
     console.log(products.map((product) => product.name ))
+    console.log('-----------------------------------------------------');
 
     // 3. Imprima no console o produto com o id 3.
     console.log(products[id = 3]);
-     
+    console.log('-----------------------------------------------------');
+
     // 4. Imprima no console os produtos com a cor “black”.    
     console.log(products.filter((product) => product.colors.includes('black')))
+    console.log('-----------------------------------------------------');
 
     // 5. Imprima no console os produtos que não possuem cor.
     console.log(products.filter((product) => product.colors.length === 0))
+    console.log('-----------------------------------------------------');

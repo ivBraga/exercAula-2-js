@@ -13,10 +13,12 @@ let products = [
 
     // 1. Adicione um novo produto ao array com as mesmas propriedades dos produtos existentes.
     products.push({ name:'Notebook', price:600, quantity:10, colors:['red', 'silver', 'black'] })
+    console.log(products)
 
     // 2. Remova os produtos fora de estoque da matriz.
     productsToRemove = products.filter((product) => product.quantity > 0)
     products.pop(productsToRemove)
+    console.log(products)
 
     // 3. Imprima no console a soma do estoque de todos os produtos.
     console.log(products.reduce((acc, product) => acc + product.quantity, 0))

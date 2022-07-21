@@ -13,13 +13,13 @@ let products = [
 
     // 1. Adicione um ID exclusivo a cada produto começando em 1.
     products.forEach((product, id) => {
-        product['id'] = id;
+        product['id'] = id + 1;
     })
     console.log(products)
     console.log('-----------------------------------------------------');
-    
+
     // 2. Imprima o nome de cada um dos produtos no console.
-    console.log(products.map((product) => product.name ))
+    console.log(products.map((product) => product.name))
     console.log('-----------------------------------------------------');
 
     // 3. Imprima no console o produto com o id 3.
